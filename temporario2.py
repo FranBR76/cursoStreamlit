@@ -16,11 +16,11 @@ with col1:
   dec_31 = datetime.date(next_year, 12, 31)
 
   st.date_input(
-    "Select your vacation for next year",
+    "Data de nascimento",
     (jan_1, datetime.date(next_year, 1, 7)),
     jan_1,
     dec_31,
-    format="MM.DD.YYYY",
+    format="DD.MM.YYYY",
   )
   
 
