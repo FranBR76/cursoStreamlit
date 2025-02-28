@@ -1,10 +1,10 @@
 import streamlit as st
 import datetime
 st.title("Seja bem-vindo novo aluno")
-
+st.header("Informe seus dados")
 col1, col2 = st.columns(2,  vertical_alignment="top", gap="large")
 
-st.header("Informe seus dados")
+
 with col1:
   
   st.text_input("Nome")
