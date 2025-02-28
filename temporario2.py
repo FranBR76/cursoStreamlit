@@ -26,7 +26,8 @@ with col1:
 
 
 with col2:
-  st.text_input("CEP")
+  
+  CEP = st.number_input("CEP")
   st.text_input("Endereço")
   st.text_input("Numero")
   st.text_input("Ponto de referencia")
