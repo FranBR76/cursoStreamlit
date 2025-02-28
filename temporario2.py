@@ -1,7 +1,7 @@
 import streamlit as st
 st.title("Seja bem-vindo novo aluno")
 
-col1, col2, col3 = st.columns(3,  vertical_alignment="top", gap="large")
+col1, col2, col3 = st.columns(2,  vertical_alignment="top", gap="large")
 
 
 with col1:
@@ -9,10 +9,15 @@ with col1:
   st.text_input("Nome")
   st.text_input("Sobrenome")
   # numero = st.text_input("CPF")
-  # numero = 
+  # numero =   
+  st.date_input(
+    "Select your vacation for next year",
+    (jan_1, datetime.date(next_year, 1, 7)),
+    jan_1,
+    dec_31,
+    format="MM.DD.YYYY",
+    )
 
-with col3:
-  st.header(" ")
 
 with col2:
   st.text_input("CEP")
