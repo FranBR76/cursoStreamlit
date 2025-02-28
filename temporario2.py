@@ -17,9 +17,7 @@ with col1:
 
   st.date_input(
     "Data de nascimento",
-    (jan_1, datetime.date(next_year, 1, 7)),
-    jan_1,
-    dec_31,
+    
     format="DD.MM.YYYY",
   )
   
