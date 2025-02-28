@@ -1,7 +1,7 @@
 import streamlit as st
 st.title("Seja bem-vindo novo aluno")
 
-col1, col2 = st.columns(2, vertical_alignment="botton", gap="medium")
+col1, col2 = st.columns(2,  vertical_alignment="bottom")
 
 
 with col1:
