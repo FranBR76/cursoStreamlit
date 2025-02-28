@@ -15,5 +15,6 @@ with col3:
     st.image("https://static.streamlit.io/examples/owl.jpg")
 
 with col4:
+    st.gap("large")
     st.header("Testando")
     st.write("TESTE")
