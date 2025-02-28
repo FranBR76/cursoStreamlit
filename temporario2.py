@@ -9,6 +9,8 @@ with col1:
   st.header("Informe seus dados")
   st.text_input("Nome")
   st.text_input("Sobrenome")
+  st.text_input("CPF")
+  
  
   today = datetime.datetime.now()
   next_year = today.year + 1
@@ -26,9 +28,9 @@ with col1:
 with col2:
   st.text_input(
     "CEP",
-    type="number",
+    
   )
-  CEP = st.number_input("CEP")
+  
   st.text_input("Endereço")
   st.text_input("Numero")
   st.text_input("Ponto de referencia")
