@@ -24,7 +24,10 @@ with col1:
 
 
 with col2:
-  
+  st.text_input(
+    "CEP",
+    type="number",
+  )
   CEP = st.number_input("CEP")
   st.text_input("Endereço")
   st.text_input("Numero")
