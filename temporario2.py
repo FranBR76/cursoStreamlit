@@ -16,4 +16,4 @@ with col3:
 
 with col4:
     st.header("Testando")
-    st.paragraph("TESTE")
+    st.write("TESTE")
