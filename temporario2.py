@@ -9,9 +9,12 @@ with col1:
   
   st.text_input("Nome")
   st.text_input("Sobrenome")
+  
+  colu, colu2 = st.columns(2, gap="large")
+  with colu:
   st.text_input("CPF")
   
- 
+  with colu2:
   today = datetime.datetime.now()
   next_year = today.year + 1
   jan_1 = datetime.date(next_year, 1, 1)
