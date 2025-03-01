@@ -3,7 +3,7 @@ import datetime
 st.title("Seja bem-vindo novo aluno")
 st.header("Informe seus dados")
 col1, col2 = st.columns(2,  vertical_alignment="top", gap="large")
-col1, col2 = st.columns([5, 2])
+col1, col2 = st.columns([4, 2])
 
 with col1:
   
