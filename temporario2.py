@@ -35,6 +35,9 @@ with col2:
   )
   
   st.text_input("Endereço")
-  st.text_input("Numero")
+  colun, colun2 = st.columns(2, gap="large")
+  with colun:
+    st.text_input("Numero")
+  with colun2:
   st.text_input("Ponto de referencia")
   
