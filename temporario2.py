@@ -39,5 +39,5 @@ with col2:
   with colun:
     st.text_input("Numero")
   with colun2:
-  st.text_input("Ponto de referencia")
+    st.text_input("Ponto de referencia")
   
