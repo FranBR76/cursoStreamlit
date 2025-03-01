@@ -12,19 +12,19 @@ with col1:
   
   colu, colu2 = st.columns(2, gap="large")
   with colu:
-  st.text_input("CPF")
+    st.text_input("CPF")
   
   with colu2:
-  today = datetime.datetime.now()
-  next_year = today.year + 1
-  jan_1 = datetime.date(next_year, 1, 1)
-  dec_31 = datetime.date(next_year, 12, 31)
-
-  st.date_input(
-    "Data de nascimento",
-    
-    format="DD.MM.YYYY",
-  )
+    today = datetime.datetime.now()
+    next_year = today.year + 1
+    jan_1 = datetime.date(next_year, 1, 1)
+    dec_31 = datetime.date(next_year, 12, 31)
+  
+    st.date_input(
+      "Data de nascimento",
+      
+      format="DD.MM.YYYY",
+    )
   
 
 
