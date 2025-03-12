@@ -185,7 +185,7 @@ def main():
     st.header("Escolha um exercício:")
     st.header("Tecle 1 - Exercicio 1")
     st.header("Tecle 2 - Exercicio 2")
-    opcao = st.input("Opção:")
+    opcao = st.number_input("Opção:")
     if opcao == "1":
         ex1()
     elif opcao == "2":
