@@ -3,12 +3,12 @@ import streamlit as st
 
 #ex 1
 def ex1():
-  print("Minha vida vai melhorar agora que estou aprendendo a programar...pelo menos o computador vai entender meus problemas!")
+  st.subheader("Minha vida vai melhorar agora que estou aprendendo a programar...pelo menos o computador vai entender meus problemas!")
 
 
 # ex 2
 def ex2():
-  frase = input("Digite a frase ''Programar um sistema de confeitaria é igual fazer um bolo: se errar a sintaxe, o código embatuma!'' do exercicio 2: ")
+  frase = st.input("Digite a frase ''Programar um sistema de confeitaria é igual fazer um bolo: se errar a sintaxe, o código embatuma!'' do exercicio 2: ")
   if frase == "Programar um sistema de confeitaria é igual fazer um bolo: se errar a sintaxe, o código embatuma!":
       print(f"Frase escrita: {frase}")
   else:
@@ -182,16 +182,16 @@ def encomendas():
 
 
 def main():
-    print("Escolha um exercício:")
-    print("Tecle 1 - Exercicio 1")
-    print("Tecle 2 - Exercicio 2")
-    opcao = input("Opção:")
+    st.header("Escolha um exercício:")
+    st.header("Tecle 1 - Exercicio 1")
+    st.header("Tecle 2 - Exercicio 2")
+    opcao = st.input("Opção:")
     if opcao == "1":
         ex1()
     elif opcao == "2":
         ex2()   
     else:
-        print("Opção inválida")
+        st.header("Opção inválida")
         return main()
 
 main()
