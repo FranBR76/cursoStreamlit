@@ -19,6 +19,15 @@ def ex2():
 
   
 # receita()
+def botaoLerIngredientes():
+      st.subheader("Voce respondeu:")
+      st.subheader(f"Xicaras de farinha de trigo: {xicara}")
+      st.subheader(f"Gramas da xicara: {gXicara}")
+      st.subheader(f"Leite condensado: {leiteCondensado}")
+      st.subheader(f"Gramas da lata de leite condensado: {gLeiteCondensado}")
+      st.subheader(f"Ovos: {ovos}")
+    
+
 
 def lerIngredientes():  
     st.header("Bolo de Leite Condensado com 3 Ingredientes")
@@ -33,15 +42,7 @@ def lerIngredientes():
     gLeiteCondensado = st.number_input("Quantas gramas tem uma lata de leite condensado de acordo com a receita?", step=1)
     ovos = st.number_input("Quantos ovos precisa? ", step=1)
     if st.button("Verificar"):
-      
-      st.subheader("Voce respondeu:")
-      st.subheader(f"Xicaras de farinha de trigo: {xicara}")
-      st.subheader(f"Gramas da xicara: {gXicara}")
-      st.subheader(f"Leite condensado: {leiteCondensado}")
-      st.subheader(f"Gramas da lata de leite condensado: {gLeiteCondensado}")
-      st.subheader(f"Ovos: {ovos}")
-    
-
+      botaoLerIngredientes()
 
 # lerIngredientes()
 
