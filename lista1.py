@@ -21,7 +21,7 @@ def ex2():
 # receita()
 def botaoLerIngredientes():
       st.subheader("Voce respondeu:")
-      st.subheader(f"Xicaras de farinha de trigo: {xicara}")
+      st.subheader("Xicaras de farinha de trigo: ", xicara)
       st.subheader(f"Gramas da xicara: {gXicara}")
       st.subheader(f"Leite condensado: {leiteCondensado}")
       st.subheader(f"Gramas da lata de leite condensado: {gLeiteCondensado}")
