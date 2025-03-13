@@ -186,14 +186,14 @@ def main():
     "Escolha um exercicio:",
     ("Exercicio 1", "Exercicio 2")
 )
-    if opcao == "Exercicio 1":
-        ex1()
-    elif opcao == "Exercicio 2":
-        ex2()   
+  if opcao == "Exercicio 1":
+      ex1()
+  elif opcao == "Exercicio 2":
+      ex2()   
     
 
-
-main()
+if __name__ == "__main__":
+  main()
 
 
 
