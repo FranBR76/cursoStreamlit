@@ -186,9 +186,9 @@ def main():
     "Escolha um exercicio:",
     ("Exercicio 1", "Exercicio 2")
 )
-    if opcao == "1":
+    if opcao == "Exercicio 1":
         ex1()
-    elif opcao == "2":
+    elif opcao == "Exercicio 2":
         ex2()   
     
 
