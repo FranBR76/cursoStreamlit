@@ -8,7 +8,7 @@ def ex1():
 
 # ex 2
 def ex2():
-  frase = st.input("Digite a frase ''Programar um sistema de confeitaria é igual fazer um bolo: se errar a sintaxe, o código embatuma!'' do exercicio 2: ")
+  frase = st.text_input("Digite a frase ''Programar um sistema de confeitaria é igual fazer um bolo: se errar a sintaxe, o código embatuma!'' do exercicio 2: ")
   if frase == "Programar um sistema de confeitaria é igual fazer um bolo: se errar a sintaxe, o código embatuma!":
       print(f"Frase escrita: {frase}")
   else:
