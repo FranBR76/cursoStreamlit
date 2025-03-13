@@ -179,7 +179,7 @@ def encomendas():
 def main():
   opcao = st.sidebar.selectbox(
     "Escolha um exercicio:",
-    ("Exercicio 1", "Exercicio 2")
+    ("Exercicio 1", "Exercicio 2", "Exercicio 3")
 )
   if opcao == "Exercicio 1":
       ex1()
