@@ -182,17 +182,16 @@ def encomendas():
 
 
 def main():
-    st.header("Escolha um exercício:")
-    st.header("Tecle 1 - Exercicio 1")
-    st.header("Tecle 2 - Exercicio 2")
-    opcao = st.number_input("Opção:")
+  opcao = st.sidebar.selectbox(
+    "Escolha um exercicio:",
+    ("Exercicio 1", "Exercicio 2")
+)
     if opcao == "1":
         ex1()
     elif opcao == "2":
         ex2()   
-    else:
-        st.header("Opção inválida")
-        return main()
+    
+
 
 main()
 
