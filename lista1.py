@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def inicio():
-  st.header("Bem-vindo(a)!"
+  st.header("Bem-vindo(a)!")
   st.subheader("Selecione um exercício da lista 1 através do menu a esquerda.")
 
 #ex 1
@@ -183,9 +183,11 @@ def encomendas():
 def main():
   opcao = st.sidebar.selectbox(
     "Escolha um exercicio:",
-    ("Exercicio 1", "Exercicio 2", "Exercicio 3")
+    ("Inicio, Exercicio 1", "Exercicio 2", "Exercicio 3")
 )
-  if opcao == "Exercicio 1":
+  if opcao == "Inicio":
+      inicio()
+  elif opcao == "Exercicio 1":
       ex1()
   elif opcao == "Exercicio 2":
       ex2()   
