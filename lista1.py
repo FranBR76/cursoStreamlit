@@ -16,7 +16,7 @@ def ex2():
 
 
 #ex 3
-def receita():
+
   
 # receita()
 
