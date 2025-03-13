@@ -32,7 +32,7 @@ def lerIngredientes():
     leiteCondensado = st.number_input("Quantas latas de leite condensado precisa? ", step=1)
     gLeiteCondensado = st.number_input("Quantas gramas tem uma lata de leite condensado de acordo com a receita?", step=1)
     ovos = st.number_input("Quantos ovos precisa? ", step=1)
-    if st.button("Verificar":
+    if st.button("Verificar"):
       
       st.subheader("Voce respondeu:")
       st.subheader(f"Xicaras de farinha de trigo: {xicara}")
