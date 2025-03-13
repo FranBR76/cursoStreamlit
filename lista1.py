@@ -1,6 +1,10 @@
 import streamlit as st
 
 
+def inicio():
+  st.header("Bem-vindo(a)!"
+  st.subheader("Selecione um exercício da lista 1 através do menu a esquerda.")
+
 #ex 1
 def ex1():
   st.subheader("Minha vida vai melhorar agora que estou aprendendo a programar...pelo menos o computador vai entender meus problemas!")
