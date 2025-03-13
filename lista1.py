@@ -184,6 +184,8 @@ def main():
       ex1()
   elif opcao == "Exercicio 2":
       ex2()   
+  elif opcao == "Exercicio 3":
+      lerIngredientes()   
     
 
 if __name__ == "__main__":
