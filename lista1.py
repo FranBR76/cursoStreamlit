@@ -10,9 +10,9 @@ def ex1():
 def ex2():
   frase = st.text_input("Digite a frase ''Programar um sistema de confeitaria é igual fazer um bolo: se errar a sintaxe, o código embatuma!'' do exercicio 2: ")
   if frase == "Programar um sistema de confeitaria é igual fazer um bolo: se errar a sintaxe, o código embatuma!":
-      print(f"Frase escrita: {frase}")
+      st.subheader(f"Frase escrita: {frase}")
   else:
-      print("Frase incorreta, tente novamente (TEM QUE RODAR O CODIGO DE NOVO)")
+      st.subheader("Frase incorreta, tente novamente (TEM QUE RODAR O CODIGO DE NOVO)")
 
 
 #ex 3
