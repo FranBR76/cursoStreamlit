@@ -12,41 +12,35 @@ def ex2():
   if frase == "Programar um sistema de confeitaria é igual fazer um bolo: se errar a sintaxe, o código embatuma!":
       st.subheader(f"Frase escrita: {frase}")
   else:
-      st.subheader("Frase incorreta, tente novamente (TEM QUE RODAR O CODIGO DE NOVO)")
+      st.subheader("Frase incorreta, tente novamente.")
 
 
 #ex 3
 def receita():
-    print("================================")
-    print("Bolo de Leite Condensado com 3 Ingredientes")
-    print("Ingredientes:")
-    print("1 lata de leite condensado (395g)")
-    print("4 ovos")
-    print("1 xicara de farinha de trigo (120g)")
-    print("================================")
-    print("")
-
+  
 # receita()
 
-def lerIngredientes():
-    xicara = input("Quantas xicaras de farinha de trigo são necessarias para a receita? ")
-    print("")
-    gXicara = input("Quantos gramas que a xicara precisa ter para a receita? ")
-    print("")
-    leiteCondensado = input("Quantas latas de leite condensado precisa? ")
-    print("")
-    gLeiteCondensado = input("Quantas gramas tem uma lata de leite condensado de acordo com a receita?")
-    print("")  
-    ovos = input("Quantos ovos precisa? ")
-    print("")
-    print("================================")
-    print("Voce respondeu:")
-    print(f"Xicaras de farinha de trigo: {xicara}")
-    print(f"Gramas da xicara: {gXicara}")
-    print(f"Leite condensado: {leiteCondensado}")
-    print(f"Gramas da lata de leite condensado: {gLeiteCondensado}")
-    print(f"Ovos: {ovos}")
-    print("================================")
+def lerIngredientes():  
+    st.header("Bolo de Leite Condensado com 3 Ingredientes")
+    st.subheader("Ingredientes:")
+    st.subheader("1 lata de leite condensado (395g)")
+    st.subheader("4 ovos")
+    st.subheader("1 xicara de farinha de trigo (120g)")
+    
+    xicara = st.number_input("Quantas xicaras de farinha de trigo são necessarias para a receita?", step=1)
+    gXicara = st.number_input("Quantos gramas que a xicara precisa ter para a receita? ", step=1)
+    leiteCondensado = st.number_input("Quantas latas de leite condensado precisa? ", step=1)
+    gLeiteCondensado = st.number_input("Quantas gramas tem uma lata de leite condensado de acordo com a receita?", step=1)
+    ovos = st.number_input("Quantos ovos precisa? ", step=1)
+    if st.button("Verificar":
+      
+      st.subheader("Voce respondeu:")
+      st.subheader(f"Xicaras de farinha de trigo: {xicara}")
+      st.subheader(f"Gramas da xicara: {gXicara}")
+      st.subheader(f"Leite condensado: {leiteCondensado}")
+      st.subheader(f"Gramas da lata de leite condensado: {gLeiteCondensado}")
+      st.subheader(f"Ovos: {ovos}")
+    
 
 
 # lerIngredientes()
