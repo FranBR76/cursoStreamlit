@@ -189,12 +189,15 @@ def main():
       ex2()   
   elif opcao == "Exercicio 3":
       lerIngredientes()   
-      ex2()   
+      
   elif opcao == "Exercicio 4":
       ex4()   
-      ex2()   
+         
   elif opcao == "Exercicio 5":
       ex5()   
+         
+  elif opcao == "Exercicio 6":
+      ex6()   
     
 
 if __name__ == "__main__":
