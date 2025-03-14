@@ -171,7 +171,7 @@ def ex7():
 def ex8():
     vetor = []
     for i in range(10):
-        valor = st.number_input(f"Digite o valor da encomenda {i+1}: "))
+        valor = st.number_input(f"Digite o valor da encomenda {i+1}: ")
         vetor.append(valor)
     media = sum(vetor) / 10
     st.write(f"Media das encomendas: {media}")
