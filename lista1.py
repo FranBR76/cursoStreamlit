@@ -117,9 +117,9 @@ def ex6():
     internet = st.number_input("Qual seu gasto com internet? ")
     agua = st.number_input("Qual seu gasto com água? ")
 
-    if st.button("Ver"):
-      teste = aluguel + energia + internet + agua
-      st.write(f"Gasto fixo: {teste}")
+    
+    teste = aluguel + energia + internet + agua
+    st.write(f"Gasto fixo: {teste}")
      
   
     leiteC = st.number_input("Qual seu gasto com leite condensado? ")
