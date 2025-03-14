@@ -66,14 +66,14 @@ def ex4():
     larguraF = st.number_input("Qual a largura da forma?")
     comprimentoF = st.number_input("Qual o comprimento da forma?") 
     volumeF = alturaF * larguraF * comprimentoF 
-    st.subheader("Interpretando o resultado:") 
-    st.subheader("Para verificar se o tamanho da forma é o suficiente para comportar a receita, devemos comparar a quantidade de ml da receita com o volume. De forma simplificada, podemos dizer que se a quantidade de ml for igual ao valor do volume, o conteúdo da receita caberá na forma. Se a quantidade de ml for maior que o volume, o conteúdo da receita não caberá na forma. Se a quantidade de ml for menor que o volume, o conteúdo cabe na forma.") 
-    st.subheader("Matematicamente: 1cm3 = 1litro = 1ml") 
+    st.write("Interpretando o resultado:") 
+    st.write("Para verificar se o tamanho da forma é o suficiente para comportar a receita, devemos comparar a quantidade de ml da receita com o volume. De forma simplificada, podemos dizer que se a quantidade de ml for igual ao valor do volume, o conteúdo da receita caberá na forma. Se a quantidade de ml for maior que o volume, o conteúdo da receita não caberá na forma. Se a quantidade de ml for menor que o volume, o conteúdo cabe na forma.") 
+    st.write("Matematicamente: 1cm3 = 1litro = 1ml") 
 
     
 
     if Mltotal <= volumeF: 
-        st.write("O conteúdo da receita caberá na forma.") 
+        st.subheader("O conteúdo da receita caberá na forma.") 
         st.write("Vamos cortar um papel para untar a forma retangular.") 
         # A= b*h - comprimento x largura creio eu 
         papel = larguraF * comprimentoF 
@@ -98,11 +98,11 @@ def ex4():
 # ex 5
  
 def ex5():
-    print("Para a versão menos calorica") 
-    leiteC = float(input("Quantos g de leite condensado você tem?")) 
+    st.subheader("Para a versão menos calorica") 
+    leiteC = st.number_input("Quantos g de leite condensado você tem?")
     MenosCalorico = leiteC * 0.2 
     MenosCalorico = leiteC - MenosCalorico 
-    print(f"Use {MenosCalorico} g de leite condensado") 
+    st.write(f"Use {MenosCalorico} g de leite condensado") 
 
     
 
@@ -181,7 +181,7 @@ def encomendas():
 def main():
   opcao = st.sidebar.selectbox(
     "Escolha um exercicio:",
-    ("Inicio", "Exercicio 1", "Exercicio 2", "Exercicio 3", "Exercicio 4")
+    ("Inicio", "Exercicio 1", "Exercicio 2", "Exercicio 3", "Exercicio 4", "Exercicio 5")
 )
   if opcao == "Inicio":
       inicio()
@@ -194,6 +194,9 @@ def main():
       ex2()   
   elif opcao == "Exercicio 4":
       ex4()   
+      ex2()   
+  elif opcao == "Exercicio 5":
+      ex5()   
     
 
 if __name__ == "__main__":
