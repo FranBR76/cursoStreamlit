@@ -155,11 +155,11 @@ def ex6():
 
 # ex 7
 def markup():
-    DV = float(input("Digite o percentual do despesas variáveis: ")) 
-    DF = float(input("Digite o percentual do despesas fixas: ")) 
-    ML = float(input("Digite o percentual da margem de lucro: ")) 
+    DV = st.number_input("Digite o percentual do despesas variáveis: ")) 
+    DF = st.number_input("Digite o percentual do despesas fixas: ")) 
+    ML = st.number_input("Digite o percentual da margem de lucro: ")) 
     M = 100 / (100 - (DV + DF + ML))
-    print(f"Markup: {M}%")
+    st.write(f"Markup: {M}%")
 
 
 # markup()
@@ -180,7 +180,7 @@ def encomendas():
 def main():
   opcao = st.sidebar.selectbox(
     "Escolha um exercicio:",
-    ("Inicio", "Exercicio 1", "Exercicio 2", "Exercicio 3", "Exercicio 4", "Exercicio 5", "Exercicio 6")
+    ("Inicio", "Exercicio 1", "Exercicio 2", "Exercicio 3", "Exercicio 4", "Exercicio 5", "Exercicio 6", "Exercicio 7")
 )
   if opcao == "Inicio":
       inicio()
@@ -199,6 +199,9 @@ def main():
          
   elif opcao == "Exercicio 6":
       ex6()   
+         
+  elif opcao == "Exercicio 7":
+      ex7()   
     
 
 if __name__ == "__main__":
