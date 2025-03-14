@@ -41,8 +41,8 @@ def lerIngredientes():
     ovos = st.number_input("Quantos ovos precisa? ", step=1)
     if st.button("Verificar"):
       st.subheader("Voce respondeu:")
-      st.subheader("Xicaras de farinha de trigo: {}".format(xicara)
-      st.subheader("Gramas da xicara: {}".format(gXicara)
+      st.subheader("Xicaras de farinha de trigo: {}".format(xicara))
+      st.subheader("Gramas da xicara: {}".format(gXicara))
       st.subheader(f"Leite condensado: {leiteCondensado}")
       st.subheader(f"Gramas da lata de leite condensado: {gLeiteCondensado}")
       st.subheader(f"Ovos: {ovos}")
