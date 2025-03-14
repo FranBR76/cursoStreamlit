@@ -146,7 +146,7 @@ def ex6():
     frete = st.number_input("Qual o valor gasto com frete? ")
 
     if st.button("Ver CTA"):   
-      CTA = fixo + variavel + administrativo + icms + frete
+      CTA = variavel + administrativo + icms + frete + fixo
       st.write(f"CTA: {CTA}")
       
 
