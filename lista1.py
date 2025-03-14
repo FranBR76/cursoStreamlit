@@ -155,9 +155,9 @@ def ex6():
 
 # ex 7
 def markup():
-    DV = st.number_input("Digite o percentual do despesas variáveis: ")) 
-    DF = st.number_input("Digite o percentual do despesas fixas: ")) 
-    ML = st.number_input("Digite o percentual da margem de lucro: ")) 
+    DV = st.number_input("Digite o percentual do despesas variáveis: ")
+    DF = st.number_input("Digite o percentual do despesas fixas: ")
+    ML = st.number_input("Digite o percentual da margem de lucro: ")
     M = 100 / (100 - (DV + DF + ML))
     st.write(f"Markup: {M}%")
 
