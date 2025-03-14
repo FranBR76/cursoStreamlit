@@ -168,13 +168,13 @@ def ex7():
 # ex 8
 
 
-def encomendas():
+def ex8():
     vetor = []
     for i in range(10):
-        valor = float(input(f"Digite o valor da encomenda {i+1}: "))
+        valor = st.number_input(f"Digite o valor da encomenda {i+1}: "))
         vetor.append(valor)
     media = sum(vetor) / 10
-    print(f"Media das encomendas: {media}")
+    st.write(f"Media das encomendas: {media}")
 
 
 def main():
@@ -202,6 +202,8 @@ def main():
          
   elif opcao == "Exercicio 7":
       ex7()   
+  elif opcao == "Exercicio 8":
+      ex8()   
     
 
 if __name__ == "__main__":
