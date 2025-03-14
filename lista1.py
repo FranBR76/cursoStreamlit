@@ -144,10 +144,11 @@ def ex6():
    
     icms = st.number_input("Qual o valor do ICMS? ")
     frete = st.number_input("Qual o valor gasto com frete? ")
-    
-    CTA = fixo + variavel + administrativo + icms + frete
-    st.write(f"CTA: {CTA}")
-    
+
+    st.button("Ver CTA"):   
+      CTA = fixo + variavel + administrativo + icms + frete
+      st.write(f"CTA: {CTA}")
+      
 
 # CTA()
 
