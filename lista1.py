@@ -54,7 +54,7 @@ def lerIngredientes():
 
 #ex 4
 def ex4(): 
-    leiteC = st.number_input("Quantos g de leite condensado você usou?")) 
+    leiteC = st.number_input("Quantos g de leite condensado você usou?")
     leiteC = leiteC * 0.7746835443037975 
     Ovos = st.number_input("Quantos ovos você usou?")
     Ovos = Ovos * 200 
