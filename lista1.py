@@ -120,7 +120,7 @@ def ex6():
     if st.button("Ver"):
       fixo = aluguel + energia + internet + agua
       st.write(f"Gasto fixo: {fixo}")
-    
+      fixo2 = fixo
   
     leiteC = st.number_input("Qual seu gasto com leite condensado? ")
     ovos =st.number_input("Qual seu gasto com ovos? ")
@@ -146,7 +146,7 @@ def ex6():
     frete = st.number_input("Qual o valor gasto com frete? ")
 
     if st.button("Ver CTA"):   
-      CTA = variavel + administrativo + icms + frete + fixo
+      CTA = variavel + administrativo + icms + frete + fixo2
       st.write(f"CTA: {CTA}")
       
 
