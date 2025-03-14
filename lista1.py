@@ -111,45 +111,43 @@ def ex5():
 
 # ex 6
 
-def CTA():
-    aluguel = float(input("Qual seu gasto com aluguel? "))
-    energia = float(input("Qual seu gasto com energia elétrica? "))
-    internet = float(input("Qual seu gasto com internet? "))
-    agua = float(input("Qual seu gasto com água? "))
+def ex6():
+    aluguel = st.number_input("Qual seu gasto com aluguel? ")
+    energia = st.number_input("Qual seu gasto com energia elétrica? ")
+    internet = st.number_input("Qual seu gasto com internet? ")
+    agua = st.number_input("Qual seu gasto com água? ")
 
-    print("================================")
+    if st.button("Ver"):
     fixo = aluguel + energia + internet + agua
-    print(f"Gasto fixo: {fixo}")
-    print("================================")
-    print("")
-    leiteC = float(input("Qual seu gasto com leite condensado? "))
-    ovos = float(input("Qual seu gasto com ovos? "))
-    farinha = float(input("Qual seu gasto com farinha de trigo? "))
-    gas = float(input("Qual seu gasto com gas? "))
-    embalagem = float(input("Qual seu gasto com embalagem? "))
-    print("================================")
+    st.write(f"Gasto fixo: {fixo}")
+    
+  
+    leiteC = st.number_input("Qual seu gasto com leite condensado? ")
+    ovos =st.number_input("Qual seu gasto com ovos? ")
+    farinha = st.number_input("Qual seu gasto com farinha de trigo? ")
+    gas = st.number_input("Qual seu gasto com gas? ")
+    embalagem = st.number_input("Qual seu gasto com embalagem? ")
+    
     variavel = leiteC + ovos + farinha + gas + embalagem
-    print(f"Gasto variável: {variavel}")
-    print("================================")
-    print("")
-    cozinha = float(input("Qual seu gasto com o setor da cozinha? "))
-    vendas = float(input("Qual seu gasto com o setor de vendas? "))
-    administrativo = float(input("Qual seu gasto com o setor administrativo? "))
-    condominio = float(input("Qual seu gasto com a anuidade de condomínio? "))
-    mei = float(input("Qual seu gasto com o MEI? "))
-    transporte = float(input("Qual o valor do transporte? "))
-    embalagem = float(input("Qual o valor da embalagem? "))
-    print("================================")
+    st.write(f"Gasto variável: {variavel}")
+    
+    cozinha = st.number_input("Qual seu gasto com o setor da cozinha? ")
+    vendas = st.number_input("Qual seu gasto com o setor de vendas? ")
+    administrativo = st.number_input("Qual seu gasto com o setor administrativo? ")
+    condominio = st.number_input("Qual seu gasto com a anuidade de condomínio? ")
+    mei = st.number_input("Qual seu gasto com o MEI? ")
+    transporte = st.number_input("Qual o valor do transporte? ")
+    embalagem = st.number_input("Qual o valor da embalagem? ")
+    
     despesas = cozinha + vendas + administrativo + condominio + mei + transporte + embalagem
-    print(f"Gasto com despesas: {despesas}")
-    print("================================")
-    print("")
-    icms = float(input("Qual o valor do ICMS? "))
-    frete = float(input("Qual o valor gasto com frete? "))
-    print("================================")
+    st.write(f"Gasto com despesas: {despesas}")
+   
+    icms = st.number_input("Qual o valor do ICMS? ")
+    frete = st.number_input("Qual o valor gasto com frete? ")
+    
     CTA = fixo + variavel + administrativo + icms + frete
-    print(f"CTA: {CTA}")
-    print("================================")
+    st.write(f"CTA: {CTA}")
+    
 
 # CTA()
 
