@@ -54,45 +54,44 @@ def lerIngredientes():
 
 #ex 4
 def ex4(): 
-    leiteC = float(input("Quantos g de leite condensado você usou?")) 
+    leiteC = st.number_input("Quantos g de leite condensado você usou?")) 
     leiteC = leiteC * 0.7746835443037975 
-    Ovos = float(input("Quantos ovos você usou?"))
+    Ovos = st.number_input("Quantos ovos você usou?")
     Ovos = Ovos * 200 
-    Farinha = float(input("Quantos g de farinha você usou?")) 
+    Farinha = st.number_input("Quantos g de farinha você usou?")
     Farinha = Farinha * 1.1 
     Mltotal = leiteC + Ovos + Farinha 
     print(f"A quantidade total de ml é de: {Mltotal}")
-    alturaF = float(input("Qual a altura da forma?")) 
-    larguraF = float(input("Qual a largura da forma?")) 
-    comprimentoF = float(input("Qual o comprimento da forma?")) 
+    alturaF = st.number_input("Qual a altura da forma?")
+    larguraF = st.number_input("Qual a largura da forma?")
+    comprimentoF = st.number_input("Qual o comprimento da forma?") 
     volumeF = alturaF * larguraF * comprimentoF 
-    print("Interpretando o resultado:") 
-    print("Para verificar se o tamanho da forma é o suficiente para comportar a receita, devemos comparar a quantidade de ml da receita com o volume. De forma simplificada, podemos dizer que se a quantidade de ml for igual ao valor do volume, o conteúdo da receita caberá na forma. Se a quantidade de ml for maior que o volume, o conteúdo da receita não caberá na forma. Se a quantidade de ml for menor que o volume, o conteúdo cabe na forma.") 
-    print("Matematicamente: 1cm3 = 1litro = 1ml") 
+    st.subheader("Interpretando o resultado:") 
+    st.subheader("Para verificar se o tamanho da forma é o suficiente para comportar a receita, devemos comparar a quantidade de ml da receita com o volume. De forma simplificada, podemos dizer que se a quantidade de ml for igual ao valor do volume, o conteúdo da receita caberá na forma. Se a quantidade de ml for maior que o volume, o conteúdo da receita não caberá na forma. Se a quantidade de ml for menor que o volume, o conteúdo cabe na forma.") 
+    st.subheader("Matematicamente: 1cm3 = 1litro = 1ml") 
 
     
 
     if Mltotal <= volumeF: 
-        print("O conteúdo da receita caberá na forma.") 
-        print("") 
-        print("Vamos cortar um papel para untar a forma retangular.") 
+        st.write("O conteúdo da receita caberá na forma.") 
+        st.write("Vamos cortar um papel para untar a forma retangular.") 
         # A= b*h - comprimento x largura creio eu 
         papel = larguraF * comprimentoF 
-        print(f"O papel deve ter {papel} cm2") 
-        print("") 
-        print("Para forma redonda:") 
-        raio = input("qual o raio da forma?") 
-        altura = input("qual a altura da forma?") 
+        st.write(f"O papel deve ter {papel} cm2") 
+        
+        st.write("Para forma redonda:") 
+        raio = st.number_input("qual o raio da forma?") 
+        altura = st.number_input("qual a altura da forma?") 
         volumeFRedonda = 3.14 * raio**2 * altura 
 
     if Mltotal <= volumeFRedonda: 
-        print("O conteúdo da receita caberá na forma.") 
-        print("") 
-        print("Vamos cortar um papel para untar a forma redonda.") 
+        st.write("O conteúdo da receita caberá na forma.") 
+       
+        st.write("Vamos cortar um papel para untar a forma redonda.") 
         papelRedondoBase = 3.14 * raio**2 
         papelRedondoLat = 2 * 3.14 * raio * altura 
         papelRedondo = papelRedondoBase + papelRedondoLat 
-        print(f"O papel deve ter {papelRedondo} de área") 
+        st.write(f"O papel deve ter {papelRedondo} de área") 
 
  
     
