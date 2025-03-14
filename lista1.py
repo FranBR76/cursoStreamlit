@@ -154,7 +154,7 @@ def ex6():
 
 
 # ex 7
-def markup():
+def ex7():
     DV = st.number_input("Digite o percentual do despesas variáveis: ")
     DF = st.number_input("Digite o percentual do despesas fixas: ")
     ML = st.number_input("Digite o percentual da margem de lucro: ")
