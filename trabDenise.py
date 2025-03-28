@@ -34,7 +34,7 @@ def infoUser():
     aumento = 0
     do(
       aumento = aumento + 100)
-    while(aumento = 500)
+    while(aumento == 500)
     st.write(aumento)
   
 
