@@ -16,7 +16,7 @@ def infoUser():
     ("Masculino", "Feminino", "Outro"),
   )
 
-  salario = st.number_input("Informe seu Salário")
+  salario = st.number_input("Informe seu Salário ")
 
   st.write("")
   st.write("")
@@ -27,4 +27,16 @@ def infoUser():
   st.write("Estado Civil: ", estadoCivil)
   st.write("Sexo: ", sexo)
   st.write("Salário: ", salario)
+
+
+  if salario > 2500:
+    st.write("O funcionário deve receber um aumento.")
+    aumento = 0
+    do(
+      aumento = aumento + 100)
+    while(aumento = 500)
+    st.write(aumento)
+  
+
+
 infoUser()
