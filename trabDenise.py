@@ -4,7 +4,7 @@ def infoUser():
   st.header("Informe seus Dados")
   nome = st.text_input("Informe seu nome ")
   sobrenome = st.text_input("Infome o sobrenome ")
-  dt_nasc = st.text_input("Informe sua data de nascimento", format="DD.MM.YYYY")
+  dt_nasc = st.date_input("Informe sua data de nascimento", format="DD.MM.YYYY")
 
 
   estadoCivil = st.selectbox(
