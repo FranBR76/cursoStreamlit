@@ -29,14 +29,14 @@ def infoUser():
   st.write("Salário: ", salario)
 
 
-  if salario > 2500:
+  if salario < 2500:
     st.write("O funcionário deve receber um aumento.")
     aumento = 0
     do(
       aumento = aumento + 100)
     while(aumento == 500):
       st.write("Aumento realizado")
-    st.write(aumento)
+    st.write("Aumento ", aumento)
   
 
 
