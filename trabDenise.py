@@ -16,8 +16,9 @@ def infoUser():
     ("Masculino", "Feminino", "Outro"),
   )
 
-  salario = st.float_input("Informe seu Salário")
+  salario = st.number_input("Informe seu Salário")
 
   st.write("Dados Informados: ")
+  st.write("Nome: ", nome)
 
 infoUser()
