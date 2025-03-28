@@ -7,14 +7,14 @@ def infoUser():
   dt_nasc = st.text_input("Informe sua data de nascimento (DD.MM.YYYY)")
 
 
-  estadoCivil = st.selectbox(
-    "Informe seu estado civil",
-    (Solteiro, Casado, Divorciado, Viúvo),
-  )
-  sexo = st.selectbox(
-    "Informe seu sexo",
-    (Masculino, Feminino, Outro),
-  )
+  # estadoCivil = st.selectbox(
+  #   "Informe seu estado civil",
+  #   (Solteiro, Casado, Divorciado, Viúvo),
+  # )
+  # sexo = st.selectbox(
+  #   "Informe seu sexo",
+  #   (Masculino, Feminino, Outro),
+  # )
 
   salario = st.float_input("Informe seu Salário")
 
