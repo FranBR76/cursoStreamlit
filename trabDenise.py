@@ -18,7 +18,13 @@ def infoUser():
 
   salario = st.number_input("Informe seu Salário")
 
+  st.write("")
+  st.write("")
   st.write("Dados Informados: ")
   st.write("Nome: ", nome)
-
+  st.write("Sobrenome: ", sobrenome)
+  st.write("Data de Nascimento: ", dt_nasc)
+  st.write("Estado Civil: ", estadoCivil)
+  st.write("Sexo: ", sexo)
+  st.write("Salário: ", salario)
 infoUser()
