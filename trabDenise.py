@@ -18,26 +18,26 @@ def infoUser():
 
   salario = st.number_input("Informe seu Salário ")
 
-  st.button("Enviar"):
-    st.write("")
-    st.write("")
-    st.write("Dados Informados: ")
-    st.write("Nome: ", nome)
-    st.write("Sobrenome: ", sobrenome)
-    st.write("Data de Nascimento: ", dt_nasc)
-    st.write("Estado Civil: ", estadoCivil)
-    st.write("Sexo: ", sexo)
-    st.write("Salário: ", salario)
+  if st.button("Enviar"):
+      st.write("")
+      st.write("")
+      st.write("Dados Informados: ")
+      st.write("Nome: ", nome)
+      st.write("Sobrenome: ", sobrenome)
+      st.write("Data de Nascimento: ", dt_nasc)
+      st.write("Estado Civil: ", estadoCivil)
+      st.write("Sexo: ", sexo)
+      st.write("Salário: ", salario)
+    
+    
+      if salario < 2500:
+        st.write("O funcionário deve receber um aumento.")
+        aumento = 0
+        while aumento < 500:
+          aumento = aumento + 100
+        st.write("Aumento ", aumento)
   
+    
   
-    if salario < 2500:
-      st.write("O funcionário deve receber um aumento.")
-      aumento = 0
-      while aumento < 500:
-        aumento = aumento + 100
-      st.write("Aumento ", aumento)
-
-  
-
 
 infoUser()
