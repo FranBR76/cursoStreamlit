@@ -36,6 +36,8 @@ def infoUser():
         while aumento < 500:
           aumento = aumento + 100
         st.write("Aumento ", aumento)
+      else:
+        st.write("O funcionário não precisa receber aumento")
   
     
   
