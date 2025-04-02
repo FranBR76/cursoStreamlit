@@ -24,7 +24,7 @@ def infoUser():
       st.write("Dados Informados: ")
       st.write("Nome: ", nome)
       st.write("Sobrenome: ", sobrenome)
-      st.write("Data de Nascimento: ", dt_nasc)
+      st.write("Data de Nascimento: ", dt_nasc.format="DD/MM/YYYY")
       st.write("Estado Civil: ", estadoCivil)
       st.write("Sexo: ", sexo)
       st.write("Salário: ", salario)
