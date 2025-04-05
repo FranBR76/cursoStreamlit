@@ -124,13 +124,13 @@ def ex7():
         elif listaB[i] == "/":
             listaD.append(listaA[i] / listaC[i])
 
-    
-    st.write("\n\n")
-   
-    st.write(f"A = | {listaA[0]} | {listaA[1]} | {listaA[2]} | {listaA[3]} |")
-    st.write(f"B = | {listaB[0]} | {listaB[1]} | {listaB[2]} | {listaB[3]} |")
-    st.write(f"C = | {listaC[0]} | {listaC[1]} | {listaC[2]} | {listaC[3]} |")
-    st.write(f"D = | {listaD[0]} | {listaD[1]} | {listaD[2]} | {listaD[3]} |")
+    if st.button("Calcular"):
+        st.write("\n\n")
+       
+        st.write(f"A = | {listaA[0]} | {listaA[1]} | {listaA[2]} | {listaA[3]} |")
+        st.write(f"B = | {listaB[0]} | {listaB[1]} | {listaB[2]} | {listaB[3]} |")
+        st.write(f"C = | {listaC[0]} | {listaC[1]} | {listaC[2]} | {listaC[3]} |")
+        st.write(f"D = | {listaD[0]} | {listaD[1]} | {listaD[2]} | {listaD[3]} |")
 if selEx == "Exercicio 7":
     ex7()
 
