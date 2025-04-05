@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-selEx = st.selectbox("Qual exercicio deseja ver?", "Exercicio 1", "Exercicio 2", "Exercicio 3", "Exercicio 4", "Exercicio 5", "Exercicio 6", "Exercicio 7", "Exercicio 8", "Exercicio 9", "Exercicio 10") 
+selEx = st.selectbox("Qual exercicio deseja ver?", ("Exercicio 1", "Exercicio 2", "Exercicio 3", "Exercicio 4", "Exercicio 5", "Exercicio 6", "Exercicio 7", "Exercicio 8", "Exercicio 9", "Exercicio 10")) 
 
 
 def ex1():
