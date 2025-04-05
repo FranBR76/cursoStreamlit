@@ -3,8 +3,6 @@ import streamlit as st
 
 selEx = st.selectbox("Qual exercicio deseja ver?", ("Exercicio 1", "Exercicio 2", "Exercicio 3", "Exercicio 4", "Exercicio 5", "Exercicio 6", "Exercicio 7", "Exercicio 8", "Exercicio 9", "Exercicio 10")) 
 
-if selEx == "Exercicio 1":
-    ex1()
 
 
 def ex1():
@@ -19,6 +17,8 @@ def ex1():
     for i in range(10):
         st.write(f"Ativo {i+1}: {ativos[i]}")
 
+if selEx == "Exercicio 1":
+    ex1()
 
 
 def ex2():
