@@ -17,40 +17,39 @@ def ex1():
     for i in range(10):
         st.write(f"Ativo {i+1}: {ativos[i]}")
 
-if selEx == "Exercicio 1":
-    ex1()
-
-
-def ex2():
+if selEx == "Exercicio 1" || "Exercicio 2":
     ex1()
 
 def ex3():
     ativos3 = []
 
     for i in range(10):
-        valor = float(input(f"Digite o valor do ativo {i+1}: "))
+        valor = st.number_input(f"Digite o valor do ativo {i+1}: ")
         ativos3.append(valor)
 
     for i in ativos3:
         if i >= 0:
-            print(f"Ativo {i}  - (natureza devedora) - valor positivo debita)")
+            st.write(f"Ativo {i}  - (natureza devedora) - valor positivo debita)")
         else:
-            print(f"Ativo {i}  - (natureza devedora) - valor negativo credita")
-
+            st.write(f"Ativo {i}  - (natureza devedora) - valor negativo credita")
+            
+if selEx == "Exercicio 3":
+    ex3()
 
 def ex4():
     ativo = []
    
 
     for i in range(10):
-        mes = float(input(f"Digite o valor do ativo {i+1}: "))
+        mes = st.number_input(f"Digite o valor do ativo {i+1}: ")
         ativo.append(mes)
     
-    print("\n\n")
+    st.write("\n\n")
 
     for i in range(10):
-        print(f"Ativo no mês {i+1}: {ativo[i]}")
-
+        st.write(f"Ativo no mês {i+1}: {ativo[i]}")
+if selEx == "Exercicio 4":
+    ex4()
 
 def ex5():
     obrigacoes = []
@@ -58,10 +57,10 @@ def ex5():
     MenorC = 0
 
     for i in range(10):
-        Ob = float(input(f"Digite o valor da obrigação {i+1}: "))
+        Ob = st.number_input(f"Digite o valor da obrigação {i+1}: ")
         obrigacoes.append(Ob)
 
-    caixa = float(input("Digite um valor do caixa"))
+    caixa = st.number_input("Digite um valor do caixa")
     for j in range(10):
         if obrigacoes[j] > caixa:
             MaiorC = MaiorC + 1
@@ -70,9 +69,11 @@ def ex5():
             MenorC = MenorC + 1
 
 
-    print(f"Obrigacoes maiores que o caixa: {MaiorC}")
-    print(f"Obrigacoes menores que o caixa: {MenorC}")
+    st.write(f"Obrigacoes maiores que o caixa: {MaiorC}")
+    st.write(f"Obrigacoes menores que o caixa: {MenorC}")
 
+if selEx == "Exercicio 5":
+    ex5()
 
 def ex6():
     listA = []
@@ -80,11 +81,11 @@ def ex6():
     listaTudo = []
 
     for i in range(10):
-        valorA = float(input(f"Digite o valor do ativo {i+1}: "))
+        valorA = st.number_input(f"Digite o valor do ativo {i+1}: ")
         listA.append(valorA)
 
     for i in range(10):
-        valorB = float(input(f"Digite o valor do ativo {i+1}: "))
+        valorB = st.number_input(f"Digite o valor do ativo {i+1}: ")
         listB.append(valorB)
 
     for i in range(10):
@@ -93,8 +94,11 @@ def ex6():
         
     
     for i in range(20):
-        print(f"Ativo {i+1}: {listaTudo[i]}")  
+        st.write(f"Ativo {i+1}: {listaTudo[i]}")  
 
+
+if selEx == "Exercicio 6":
+    ex6()
 
 def ex7():
     listaA = []
@@ -103,11 +107,11 @@ def ex7():
     listaD = []
 
     for i in range(4):
-        valorA = float(input(f"Digite o valor {i+1}: Lista A "))
+        valorA = st.number_input(f"Digite o valor {i+1}: Lista A ")
         listaA.append(valorA)
-        valorB = input(f"Digite o operador {i+1}: Lista B ")
+        valorB = st.text_input(f"Digite o operador {i+1}: Lista B ")
         listaB.append(valorB)
-        valorC = float(input(f"Digite o valor {i+1}: Lista C "))
+        valorC = st.number_input(f"Digite o valor {i+1}: Lista C ")
         listaC.append(valorC)
 
     for i in range(4):
@@ -121,19 +125,20 @@ def ex7():
             listaD.append(listaA[i] / listaC[i])
 
     
-    print("\n\n")
+    st.write("\n\n")
    
-    print(f"A = | {listaA[0]} | {listaA[1]} | {listaA[2]} | {listaA[3]} |")
-    print(f"B = | {listaB[0]} | {listaB[1]} | {listaB[2]} | {listaB[3]} |")
-    print(f"C = | {listaC[0]} | {listaC[1]} | {listaC[2]} | {listaC[3]} |")
-    print(f"D = | {listaD[0]} | {listaD[1]} | {listaD[2]} | {listaD[3]} |")
-
+    st.write(f"A = | {listaA[0]} | {listaA[1]} | {listaA[2]} | {listaA[3]} |")
+    st.write(f"B = | {listaB[0]} | {listaB[1]} | {listaB[2]} | {listaB[3]} |")
+    st.write(f"C = | {listaC[0]} | {listaC[1]} | {listaC[2]} | {listaC[3]} |")
+    st.write(f"D = | {listaD[0]} | {listaD[1]} | {listaD[2]} | {listaD[3]} |")
+if selEx == "Exercicio 7":
+    ex7()
 
 def ex8():
     despesas = []
 
     for i in range(5):
-        valorDespesas =float(input("Digite o valor da despesa: "))
+        valorDespesas =st.number_input("Digite o valor da despesa: ")
         despesas.append(valorDespesas)
     temp = 0
     for i in range(5):
@@ -143,14 +148,15 @@ def ex8():
                 despesas[i] = despesas[i+1]
                 despesas[i+1] = temp
 
-    print(f"Ordem decrescente: {despesas}")
+   st.write(f"Ordem decrescente: {despesas}")
 
-
+if selEx == "Exercicio 8":
+    ex8()
 def ex9():
     despesas = []
 
     for i in range(5):
-        valorDespesas =float(input("Digite o valor da despesa: "))
+        valorDespesas = st.number_input("Digite o valor da despesa: ")
         despesas.append(valorDespesas)
     temp = 0
     for i in range(5):
@@ -163,16 +169,18 @@ def ex9():
     for i in range(5):
         despesas[i] += despesas[i] * 0.1
 
-    print(f"Ordem decrescente dos valores com multa: {despesas}")
+    st.write(f"Ordem decrescente dos valores com multa: {despesas}")
     
-
+if selEx == "Exercicio 9":
+    ex9()
+    
 def ex10():
-    caixa = float(input("Digite o valor do caixa: "))
+    caixa = st.number_input("Digite o valor do caixa: ")
     
     despesas = []
 
     for i in range(5):
-        valorDespesas =float(input("Digite o valor da despesa: "))
+        valorDespesas =st.number_input("Digite o valor da despesa: ")
         despesas.append(valorDespesas)
     temp = 0
     for i in range(5):
@@ -185,11 +193,14 @@ def ex10():
     for i in range(5):
         despesas[i] += despesas[i] * 0.1
 
-    print(f"Ordem decrescente dos valores com multa: {despesas}")
+    st.write(f"Ordem decrescente dos valores com multa: {despesas}")
 
     despesasSomadas = sum(despesas)
     if despesasSomadas > caixa:
-        print("Caixa insuficiente para cobrir as despesas")
+        st.write("Caixa insuficiente para cobrir as despesas")
     else:
-        print("Caixa suficiente para cobrir as despesas")
-        print(f"Valor restante no caixa: {caixa - despesasSomadas}")
+        st.write("Caixa suficiente para cobrir as despesas")
+        st.write(f"Valor restante no caixa: {caixa - despesasSomadas}")
+
+if selEx == "Exercicio 10":
+    ex10()
