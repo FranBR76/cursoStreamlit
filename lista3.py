@@ -17,7 +17,7 @@ def ex1():
     for i in range(10):
         st.write(f"Ativo {i+1}: {ativos[i]}")
 
-if selEx == "Exercicio 1" || "Exercicio 2":
+if selEx == "Exercicio 1" and "Exercicio 2":
     ex1()
 
 def ex3():
