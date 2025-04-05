@@ -147,8 +147,7 @@ def ex8():
                 temp = despesas[i]
                 despesas[i] = despesas[i+1]
                 despesas[i+1] = temp
-
-   st.write(f"Ordem decrescente: {despesas}")
+    st.write(f"Ordem decrescente: {despesas}")
 
 if selEx == "Exercicio 8":
     ex8()
