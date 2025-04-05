@@ -81,11 +81,11 @@ def ex6():
     listaTudo = []
 
     for i in range(10):
-        valorA = st.number_input(f"Digite o valor do ativo {i+1}: ")
+        valorA = st.number_input(f"Digite o valor do ativo {i+1}: ", key = "editValorA")
         listA.append(valorA)
 
     for i in range(10):
-        valorB = st.number_input(f"Digite o valor do ativo {i+1}: ")
+        valorB = st.number_input(f"Digite o valor do ativo {i+1}: ", key = "editValorB")
         listB.append(valorB)
 
     for i in range(10):
