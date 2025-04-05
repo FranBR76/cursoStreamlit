@@ -3,18 +3,21 @@ import streamlit as st
 
 selEx = st.selectbox("Qual exercicio deseja ver?", ("Exercicio 1", "Exercicio 2", "Exercicio 3", "Exercicio 4", "Exercicio 5", "Exercicio 6", "Exercicio 7", "Exercicio 8", "Exercicio 9", "Exercicio 10")) 
 
+if selEx == "Exercicio 1":
+    ex1()
+
 
 def ex1():
     ativos = []
 
     for i in range(10):
-        valor = float(input(f"Digite o valor do ativo {i+1}: "))
+        valor = st.number_input(f"Digite o valor do ativo {i+1}: ")
         ativos.append(valor)
 
-    print("\n\n\n\n")
-    print("Ativos:")
+    
+    st.write("Ativos: " "\n")
     for i in range(10):
-        print(f"Ativo {i+1}: {ativos[i]}")
+        st.write(f"Ativo {i+1}: {ativos[i]}")
 
 
 
